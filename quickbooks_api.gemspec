@@ -8,11 +8,11 @@ spec = Gem::Specification.new do |s|
             Dir['xml_schema/*.xml'] + Dir['sample_data/*.xml'] + 
             ["README", "TODO"]
   s.require_path = 'lib'
-  s.author = "Alex Skryl"
-  s.email = "rut216@gmail.com"
-  s.homepage = "http://github.com/skryl"
+  s.author = "Kelly Mahan"
+  s.email = "kmahan@kmahan.com"
+  s.homepage = "http://github.com/digimedia/quickbooks_api"
 
-  s.add_dependency(%q<activesupport>, [">= 0"])
-  s.add_dependency(%q<nokogiri>, [">= 0"])
-  s.add_dependency(%q<buffered_logger>, [">= 0.1.3"])
+  s.add_dependency('activesupport')
+  s.add_dependency('nokogiri')
+  s.add_dependency('buffered_logger', [">= 0.1.3"])
 end
