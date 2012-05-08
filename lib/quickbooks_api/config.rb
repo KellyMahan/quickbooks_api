@@ -1,4 +1,4 @@
-module Quickbooks::Config
+module QuickbooksApi::Config
 
   API_ROOT = File.join(File.dirname(__FILE__), '..', '..').freeze
   XML_SCHEMA_PATH = File.join(API_ROOT, 'xml_schema').freeze   
@@ -6,11 +6,11 @@ module Quickbooks::Config
 
   SCHEMA_MAP = {
     :qb    => {:dtd_file => "qbxmlops70.xml", 
-               :namespace => Quickbooks::QBXML, 
+               :namespace => QuickbooksApi::QBXML, 
                :container_class => 'QBXML'
               }.freeze,
     :qbpos => {:dtd_file => "qbposxmlops30.xml", 
-               :namespace => Quickbooks::QBPOSXML, 
+               :namespace => QuickbooksApi::QBPOSXML, 
                :container_class => 'QBPOSXML'
               }.freeze,
   }.freeze

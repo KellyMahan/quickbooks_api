@@ -1,6 +1,6 @@
 require File.join(File.dirname(__FILE__), "spec_helper.rb")
 
-describe Quickbooks::Support::Inflection do
+describe QuickbooksApi::Support::Inflection do
 
     #before :each do
       #@klass = Nokogiri::XML::NodeSet

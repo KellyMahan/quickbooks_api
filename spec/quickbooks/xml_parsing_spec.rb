@@ -1,6 +1,6 @@
 require File.join(File.dirname(__FILE__), "spec_helper.rb")
 
-describe Quickbooks::Parser::XMLParsing do
+describe QuickbooksApi::Parser::XMLParsing do
 
   #it "should set useful parsing constants" do
     #XML_DOCUMENT.should == Nokogiri::XML::Document

@@ -1,6 +1,6 @@
 require 'active_support/core_ext'
 
-module Quickbooks::Support::Inflection
+module QuickbooksApi::Support::Inflection
 
   def underscore(obj)
     name = \

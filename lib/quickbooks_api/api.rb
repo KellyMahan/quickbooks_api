@@ -1,7 +1,7 @@
-class Quickbooks::API
-  include Quickbooks::Logger
-  include Quickbooks::Config
-  include Quickbooks::Support::Inflection
+class QuickbooksApi::API
+  include QuickbooksApi::Logger
+  include QuickbooksApi::Config
+  include QuickbooksApi::Support::Inflection
 
   attr_reader :dtd_parser, :qbxml_parser, :schema_type
   private_class_method :new
@@ -11,8 +11,8 @@ class Quickbooks::API
     self.class.check_schema_type!(schema_type)
     @schema_type = schema_type
 
-    @dtd_parser = Quickbooks::DtdParser.new(schema_type)
-    @qbxml_parser = Quickbooks::QbxmlParser.new(schema_type)
+    @dtd_parser = QuickbooksApi::DtdParser.new(schema_type)
+    @qbxml_parser = QuickbooksApi::QbxmlParser.new(schema_type)
 
     load_qb_classes
     @@instances[schema_type] = self

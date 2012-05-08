@@ -1,7 +1,7 @@
-module Quickbooks::Parser::XMLGeneration
-  include Quickbooks::Parser
-  include Quickbooks::Parser::XMLParsing
-  include Quickbooks::Support::Inflection
+module QuickbooksApi::Parser::XMLGeneration
+  include QuickbooksApi::Parser
+  include QuickbooksApi::Parser::XMLParsing
+  include QuickbooksApi::Support::Inflection
 
   def to_qbxml
     xml_doc = Nokogiri::XML(self.class.xml_template)

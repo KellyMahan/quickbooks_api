@@ -1,6 +1,6 @@
 require 'nokogiri'
 
-module Quickbooks::Parser::XMLParsing
+module QuickbooksApi::Parser::XMLParsing
 
   XML_DOCUMENT = Nokogiri::XML::Document
   XML_NODE_SET = Nokogiri::XML::NodeSet

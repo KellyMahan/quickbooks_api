@@ -1,6 +1,6 @@
 require File.join(File.dirname(__FILE__), "spec_helper.rb")
 
-describe Quickbooks::Parser::ClassBuilder do
+describe QuickbooksApi::Parser::ClassBuilder do
 
   it "should add a type checked attribute accessor to a class" do
   end

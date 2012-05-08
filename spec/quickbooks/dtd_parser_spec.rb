@@ -1,6 +1,6 @@
 require File.join(File.dirname(__FILE__), "spec_helper.rb")
 
-describe Quickbooks::DtdParser do
+describe QuickbooksApi::DtdParser do
 
   it "should parse a dtd file and build wrapper classes" do 
   end

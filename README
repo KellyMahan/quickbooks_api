@@ -5,10 +5,10 @@ INITIALIZATION
 # :qb    - Quickbooks
 # :qbpos - Quickbooks Point Of Sale
 
-api = Quickbooks::API.instance(:qbpos)
+api = QuickbooksApi::API.instance(:qbpos)
 
 # shorthand initialization
-api = Quickbooks::API[:qbpos]
+api = QuickbooksApi::API[:qbpos]
 
 
 API INTROSPECTION

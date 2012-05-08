@@ -1,10 +1,10 @@
 #!/usr/bin/env ruby
 
-class Quickbooks::QbxmlParser
-  include Quickbooks::Config
-  include Quickbooks::Logger
-  include Quickbooks::Parser::XMLParsing
-  include Quickbooks::Support::Inflection
+class QuickbooksApi::QbxmlParser
+  include QuickbooksApi::Config
+  include QuickbooksApi::Logger
+  include QuickbooksApi::Parser::XMLParsing
+  include QuickbooksApi::Support::Inflection
 
   attr_accessor :schema_type
 

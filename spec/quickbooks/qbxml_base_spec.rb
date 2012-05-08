@@ -1,6 +1,6 @@
 require File.join(File.dirname(__FILE__), "spec_helper.rb")
 
-describe Quickbooks::Parser::QbxmlBase do
+describe QuickbooksApi::Parser::QbxmlBase do
 
   it "should have a type conversion map with all qb types" do
   end

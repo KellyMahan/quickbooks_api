@@ -1,5 +1,5 @@
-class Quickbooks::DtdParser < Quickbooks::QbxmlParser
-  include Quickbooks::Parser::ClassBuilder
+class QuickbooksApi::DtdParser < QuickbooksApi::QbxmlParser
+  include QuickbooksApi::Parser::ClassBuilder
 
 private
 
@@ -30,7 +30,7 @@ private
   def build_qbxml_class(xml_obj)
     obj_name = xml_obj.name
     unless schema_namespace.const_defined?(obj_name)
-      klass = Class.new(Quickbooks::Parser::QbxmlBase)
+      klass = Class.new(QuickbooksApi::Parser::QbxmlBase)
       schema_namespace.const_set(obj_name, klass) 
       klass.xml_attributes = parse_xml_attributes(xml_obj)
       add_xml_template(klass, xml_obj.to_xml)

@@ -1,12 +1,12 @@
 require 'buffered_logger'
 
-module Quickbooks::Logger
+module QuickbooksApi::Logger
   def log
-    Quickbooks::Log.log
+    QuickbooksApi::Log.log
   end
 end
 
-class Quickbooks::Log
+class QuickbooksApi::Log
   private_class_method :new
   LOG_LEVEL = 6
 

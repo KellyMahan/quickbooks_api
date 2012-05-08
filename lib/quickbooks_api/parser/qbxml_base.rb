@@ -1,10 +1,10 @@
 # inheritance base for schema classes
-class Quickbooks::Parser::QbxmlBase
-  include Quickbooks::Logger
-  extend  Quickbooks::Logger
-  include Quickbooks::Parser::XMLGeneration
+class QuickbooksApi::Parser::QbxmlBase
+  include QuickbooksApi::Logger
+  extend  QuickbooksApi::Logger
+  include QuickbooksApi::Parser::XMLGeneration
 
-  QBXML_BASE = Quickbooks::Parser::QbxmlBase
+  QBXML_BASE = QuickbooksApi::Parser::QbxmlBase
 
   FLOAT_CAST = Proc.new {|d| d ? Float(d) : 0.0}                                  
   BOOL_CAST  = Proc.new {|d| d ? (d == 'True' ? true : false) : false }          

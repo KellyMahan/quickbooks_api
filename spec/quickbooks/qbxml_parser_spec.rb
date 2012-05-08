@@ -1,6 +1,6 @@
 require File.join(File.dirname(__FILE__), "spec_helper.rb")
 
-describe Quickbooks::QbxmlParser do
+describe QuickbooksApi::QbxmlParser do
 
   it "should set the schema type during initialization" do
   end

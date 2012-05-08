@@ -1,6 +1,6 @@
 require File.join(File.dirname(__FILE__), "spec_helper.rb")
 
-describe Quickbooks::Config do
+describe QuickbooksApi::Config do
 
   #describe "configuration helpers" do
 
@@ -45,8 +45,8 @@ describe Quickbooks::Config do
   #describe "other helpers" do
     
     #before :all do
-      #@qb_api = Quickbooks::API.new(:qb)
-      #@qbpos_api = Quickbooks::API.new(:qbpos)
+      #@qb_api = QuickbooksApi::API.new(:qb)
+      #@qbpos_api = QuickbooksApi::API.new(:qbpos)
     #end
 
     #it "should return all the cached classes" do
@@ -62,9 +62,9 @@ describe Quickbooks::Config do
 
     #it "should check if a particular class is cached" do
       #self.stub!(:schema_type => :qb)
-      #is_cached_class?(Quickbooks::QBXML::QBXML).should be_true
+      #is_cached_class?(QuickbooksApi::QBXML::QBXML).should be_true
       #self.stub!(:schema_type => :qbpos)
-      #is_cached_class?(Quickbooks::QBPOSXML::QBPOSXML).should be_true
+      #is_cached_class?(QuickbooksApi::QBPOSXML::QBPOSXML).should be_true
     #end
 
   #end
